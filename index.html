@@ -65,6 +65,7 @@
       width: 130px;
       height: 90px;
       display: block;
+      object-fit: cover;
     }
 
     .card-info {
@@ -101,181 +102,44 @@
 <body>
 
 <header>
-  <div class="site-title">Brandon's Things</div>
-  <div class="site-sub">Stuff I Made</div>
+  <div class="site-title">Brandon's Projects</div>
 </header>
 
 <div class="list">
 
   <!-- ── CHORB FIFA 2026 ── -->
   <a class="card" href="/World-Cup-2026-CHORB/" target="_blank" rel="noopener">
-    <svg class="card-art" viewBox="0 0 130 90" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#1a6b3c"/>
-          <stop offset="100%" stop-color="#27ae60"/>
-        </linearGradient>
-      </defs>
-      <rect width="130" height="90" fill="url(#sky)"/>
-      <!-- Pitch stripes -->
-      <rect x="0"  y="0" width="17" height="90" fill="rgba(255,255,255,0.04)"/>
-      <rect x="34" y="0" width="17" height="90" fill="rgba(255,255,255,0.04)"/>
-      <rect x="68" y="0" width="17" height="90" fill="rgba(255,255,255,0.04)"/>
-      <rect x="102" y="0" width="17" height="90" fill="rgba(255,255,255,0.04)"/>
-      <!-- Halfway line -->
-      <line x1="65" y1="0" x2="65" y2="90" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
-      <!-- Center circle -->
-      <circle cx="65" cy="45" r="22" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
-      <!-- Goals -->
-      <rect x="0"   y="34" width="7"  height="22" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/>
-      <rect x="123" y="34" width="7"  height="22" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/>
-      <!-- Soccer ball -->
-      <circle cx="65" cy="34" r="10" fill="white"/>
-      <polygon points="65,25 70,29 68,36 62,36 60,29" fill="#222"/>
-      <circle cx="62" cy="29" r="2.5" fill="rgba(255,255,255,0.55)"/>
-      <!-- Title -->
-      <text x="65" y="74" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="18" fill="rgba(255,255,255,0.9)" letter-spacing="-0.5">CHORB</text>
-      <text x="65" y="86" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="8" fill="rgba(255,255,255,0.55)" letter-spacing="0.5">FIFA 2026</text>
-    </svg>
+    <img class="card-art" src="World-Cup-2026-CHORB.png" alt="FIFA World Cup 2026 - CHORB Tracker" />
     <div class="card-info">
-      <div class="card-name">CHORB FIFA 2026</div>
-      <div class="card-desc">Live fantasy World Cup tracker with group tables, standings, and betting odds.</div>
+      <div class="card-name">FIFA World Cup 2026 - CHORB Tracker</div>
+      <div class="card-desc">Live World Cup Tracking for 2026 CHORB World Cup Draft Challenge</div>
     </div>
   </a>
 
   <!-- ── BPOW APA Pool Tracker ── -->
   <a class="card" href="/APA-Big-Pitcher-of-Water/" target="_blank" rel="noopener">
-    <svg class="card-art" viewBox="0 0 130 90" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="felt" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#0e3b5c"/>
-          <stop offset="100%" stop-color="#0a2d47"/>
-        </linearGradient>
-        <radialGradient id="b1" cx="38%" cy="33%" r="60%"><stop offset="0%" stop-color="#fff"/><stop offset="100%" stop-color="#ddd"/></radialGradient>
-        <radialGradient id="b2" cx="38%" cy="33%" r="60%"><stop offset="0%" stop-color="#f5c518"/><stop offset="100%" stop-color="#d4a500"/></radialGradient>
-        <radialGradient id="b3" cx="38%" cy="33%" r="60%"><stop offset="0%" stop-color="#e74c3c"/><stop offset="100%" stop-color="#c0392b"/></radialGradient>
-        <radialGradient id="b8" cx="38%" cy="33%" r="60%"><stop offset="0%" stop-color="#333"/><stop offset="100%" stop-color="#111"/></radialGradient>
-        <radialGradient id="b4" cx="38%" cy="33%" r="60%"><stop offset="0%" stop-color="#3498db"/><stop offset="100%" stop-color="#2980b9"/></radialGradient>
-      </defs>
-      <rect width="130" height="90" fill="url(#felt)"/>
-      <!-- Rail -->
-      <rect x="6" y="6" width="118" height="78" rx="6" fill="none" stroke="#0d2d40" stroke-width="5"/>
-      <rect x="8" y="8" width="114" height="74" rx="5" fill="none" stroke="#1a5c8a" stroke-width="2.5"/>
-      <!-- Pockets -->
-      <circle cx="11" cy="11" r="5" fill="#050e16"/>
-      <circle cx="119" cy="11" r="5" fill="#050e16"/>
-      <circle cx="11" cy="79" r="5" fill="#050e16"/>
-      <circle cx="119" cy="79" r="5" fill="#050e16"/>
-      <circle cx="65" cy="9" r="4" fill="#050e16"/>
-      <circle cx="65" cy="81" r="4" fill="#050e16"/>
-      <!-- Rack -->
-      <circle cx="88" cy="45" r="7" fill="url(#b1)"/>
-      <circle cx="102" cy="39" r="7" fill="url(#b2)"/>
-      <circle cx="102" cy="51" r="7" fill="url(#b8)"/>
-      <text x="102" y="54" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="6" fill="white">8</text>
-      <circle cx="116" cy="33" r="7" fill="url(#b3)"/>
-      <circle cx="116" cy="45" r="7" fill="url(#b4)"/>
-      <!-- Cue -->
-      <line x1="28" y1="34" x2="81" y2="44" stroke="#c8a86e" stroke-width="2.5" stroke-linecap="round"/>
-      <line x1="26" y1="33" x2="31" y2="34" stroke="#e8c88e" stroke-width="4" stroke-linecap="round"/>
-      <!-- Cue ball -->
-      <circle cx="46" cy="54" r="8" fill="url(#b1)"/>
-      <circle cx="43" cy="51" r="2.5" fill="rgba(255,255,255,0.55)"/>
-      <!-- Label -->
-      <text x="34" y="74" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="9" fill="rgba(255,255,255,0.5)" letter-spacing="0.3">BPOW</text>
-    </svg>
+    <img class="card-art" src="APA-Big-Pitcher-of-Water.png" alt="Big Pitcher of Water" />
     <div class="card-info">
-      <div class="card-name">Big Pitcher of Water</div>
-      <div class="card-desc">APA pool league stats — PPM, per-opponent breakdowns, patch tracker &amp; team charts.</div>
+      <div class="card-name">APA Tracker - Big Pitcher of Water</div>
+      <div class="card-desc">Nick's Double Jeopardy, Monday Nights. Stats beginning in Spring 2026 session.</div>
     </div>
   </a>
 
   <!-- ── First Born ── -->
   <a class="card" href="/FirstBornGame/" target="_blank" rel="noopener">
-    <svg class="card-art" viewBox="0 0 130 90" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="parch" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#2e4a2e"/>
-          <stop offset="100%" stop-color="#1e3320"/>
-        </linearGradient>
-      </defs>
-      <rect width="130" height="90" fill="url(#parch)"/>
-      <!-- Dot grid -->
-      <g fill="rgba(255,220,80,0.13)">
-        <circle cx="20" cy="15" r="1.5"/><circle cx="50" cy="15" r="1.5"/><circle cx="80" cy="15" r="1.5"/><circle cx="110" cy="15" r="1.5"/>
-        <circle cx="20" cy="45" r="1.5"/><circle cx="50" cy="45" r="1.5"/><circle cx="80" cy="45" r="1.5"/><circle cx="110" cy="45" r="1.5"/>
-      </g>
-      <!-- Left portrait -->
-      <rect x="14" y="12" width="42" height="56" rx="4" fill="#1a2e1a" stroke="#c49a1e" stroke-width="1.5"/>
-      <ellipse cx="35" cy="33" rx="11" ry="12" fill="#3d5c3d"/>
-      <rect x="20" y="44" width="30" height="18" rx="5" fill="#3d5c3d"/>
-      <rect x="17" y="62" width="36" height="11" rx="3" fill="#c49a1e"/>
-      <text x="35" y="71" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="7.5" fill="#1e2e1e">1743</text>
-      <!-- Right portrait -->
-      <rect x="74" y="12" width="42" height="56" rx="4" fill="#263d26" stroke="#c49a1e" stroke-width="1.5"/>
-      <ellipse cx="95" cy="33" rx="11" ry="12" fill="#4a6e4a"/>
-      <rect x="80" y="44" width="30" height="18" rx="5" fill="#4a6e4a"/>
-      <rect x="77" y="62" width="36" height="11" rx="3" fill="#c49a1e"/>
-      <text x="95" y="71" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="7.5" fill="#1e2e1e">1881</text>
-      <!-- VS -->
-      <text x="65" y="42" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="13" fill="rgba(196,154,30,0.9)">VS</text>
-      <!-- Title -->
-      <text x="65" y="82" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="11" fill="rgba(255,220,80,0.8)" letter-spacing="0.3">FIRST BORN</text>
-    </svg>
+    <img class="card-art" src="FirstBornGame.png" alt="First Born: The Game" />
     <div class="card-info">
-      <div class="card-name">First Born: The Game</div>
-      <div class="card-desc">Higher / lower birth year trivia with 1,100+ historical figures and Wikipedia portraits.</div>
+      <div class="card-name">First Born</div>
+      <div class="card-desc">Birth year guessing game</div>
     </div>
   </a>
 
   <!-- ── CelebGridy ── -->
   <a class="card" href="/CelebGridy/" target="_blank" rel="noopener">
-    <svg class="card-art" viewBox="0 0 130 90" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="celeb-bg" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#3b1f6b"/>
-          <stop offset="100%" stop-color="#251344"/>
-        </linearGradient>
-        <radialGradient id="av-a" cx="38%" cy="33%" r="60%"><stop offset="0%" stop-color="#a374e0"/><stop offset="100%" stop-color="#7b52d4"/></radialGradient>
-        <radialGradient id="av-b" cx="38%" cy="33%" r="60%"><stop offset="0%" stop-color="#f0a050"/><stop offset="100%" stop-color="#d4822a"/></radialGradient>
-        <radialGradient id="av-c" cx="38%" cy="33%" r="60%"><stop offset="0%" stop-color="#5bbfde"/><stop offset="100%" stop-color="#2e88c0"/></radialGradient>
-      </defs>
-      <rect width="130" height="90" fill="url(#celeb-bg)"/>
-      <!-- Grid lines -->
-      <line x1="50"  y1="8"  x2="50"  y2="82" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-      <line x1="90"  y1="8"  x2="90"  y2="82" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-      <line x1="10"  y1="40" x2="120" y2="40" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-      <line x1="10"  y1="66" x2="120" y2="66" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
-      <!-- Header labels -->
-      <text x="70" y="24" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="7" fill="rgba(255,255,255,0.4)">Actor</text>
-      <text x="110" y="24" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="7" fill="rgba(255,255,255,0.4)">Singer</text>
-      <!-- Row labels -->
-      <text x="30" y="56" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="6.5" fill="rgba(255,255,255,0.4)">Harvard</text>
-      <text x="30" y="77" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="800" font-size="6.5" fill="rgba(255,255,255,0.4)">NY Born</text>
-      <!-- Avatars -->
-      <circle cx="70" cy="53" r="11" fill="url(#av-a)"/>
-      <ellipse cx="70" cy="50" rx="4.5" ry="5" fill="rgba(255,255,255,0.22)"/>
-      <ellipse cx="70" cy="57" rx="8" ry="5" fill="rgba(255,255,255,0.16)"/>
-
-      <circle cx="110" cy="53" r="11" fill="url(#av-b)"/>
-      <ellipse cx="110" cy="50" rx="4.5" ry="5" fill="rgba(255,255,255,0.22)"/>
-      <ellipse cx="110" cy="57" rx="8" ry="5" fill="rgba(255,255,255,0.16)"/>
-
-      <circle cx="70" cy="74" r="9" fill="url(#av-c)"/>
-      <ellipse cx="70" cy="71" rx="3.5" ry="4" fill="rgba(255,255,255,0.22)"/>
-      <ellipse cx="70" cy="77" rx="6" ry="4" fill="rgba(255,255,255,0.16)"/>
-
-      <!-- Unknown cell -->
-      <circle cx="110" cy="74" r="9" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.2)" stroke-width="1" stroke-dasharray="3 2"/>
-      <text x="110" y="78" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="11" fill="rgba(255,255,255,0.3)">?</text>
-
-      <!-- Title -->
-      <text x="30" y="26" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="13" fill="rgba(255,255,255,0.9)">Celeb</text>
-      <text x="30" y="38" text-anchor="middle" font-family="Nunito,sans-serif" font-weight="900" font-size="13" fill="rgba(180,140,255,0.9)">Gridy</text>
-    </svg>
+    <img class="card-art" src="CelebGridy.png" alt="CelebGridy" />
     <div class="card-info">
       <div class="card-name">CelebGridy</div>
-      <div class="card-desc">Immaculate Grid–style celebrity trivia. Match ~1,400 famous people across categories.</div>
+      <div class="card-desc">Immaculate Grid-style celebrity guessing game</div>
     </div>
   </a>
 
